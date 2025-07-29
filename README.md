@@ -1,11 +1,11 @@
 # CST8917 Lab 4 – Real-Time Trip Event Analysis
 
-## ✅ Overview
+##  Overview
 This project uses Azure Event Hub, Azure Functions, and Azure Logic Apps to detect and report suspicious or interesting taxi trips in real time.
 
 ---
 
-## 🚀 Architecture
+##  Architecture
 - Event Hub receives incoming trip events.
 - Azure Function analyzes trip metrics (passenger count, distance, payment type).
 - Logic App handles trip routing:
@@ -13,7 +13,7 @@ This project uses Azure Event Hub, Azure Functions, and Azure Logic Apps to dete
 
 ---
 
-## 🔧 Azure Function Logic
+##  Azure Function Logic
 The function checks:
 - Distance > 10 → LongTrip
 - Passenger count > 4 → GroupRide
@@ -27,18 +27,18 @@ It returns:
 
 ---
 
-## 🔁 Logic App Steps
+##  Logic App Steps
 1. Trigger: Event received from Event Hub
 2. Action: Send to Function
 3. Loop over each result
 4. Conditional branches:
-   - If not interesting → ✅ No Issues card
-   - If interesting → 🚨 Interesting or ⚠️ Suspicious cards
+   - If not interesting →  No Issues card
+   - If interesting →  Interesting or  Suspicious cards
 5. Send Adaptive Cards to Teams Channel
 
 ---
 
-## 📥 Sample Input
+##  Sample Input
 ```json
 {
   "ContentData": {
