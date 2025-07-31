@@ -177,7 +177,7 @@ Watch the system in action:
 │   └── logicappworkflow.json
 ├── function/
 │   └── analyze_trip.py
-├── screenshots/
-│   └── trip-monitoring-logic-flow.png
+├── Screenshot/
+│   └── Workflow.png
 ├── README.md
 ```
