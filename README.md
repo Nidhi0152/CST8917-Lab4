@@ -174,7 +174,7 @@ Watch the system in action:
 ```
 .
 ├── logic-app/
-│   └── logic-app-workflow.json
+│   └── logicappworkflow.json
 ├── function/
 │   └── analyze_trip.py
 ├── screenshots/
